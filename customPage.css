@@ -1,0 +1,1216 @@
+.homestuckSqr { 
+  background: #5a5a5a;
+  image-rendering: pixelated;
+}
+
+.homestuckSqr .navList {
+  width: 950px;
+  height: 17px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+  
+  font-size: 10px;
+  line-height: 16px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  color: white;
+  margin: auto;
+}
+
+.homestuckSqr .sep {
+  margin: 0 .3em; 
+}
+
+.homestuckSqr .navList a:nth-child(n+0):nth-child(-n+1) { color: #f2a400 }
+.homestuckSqr .navList a:nth-child(n+2):nth-child(-n+4) { color: #f2a400; }
+.homestuckSqr .navList a:nth-child(n+5):nth-child(-n+9) { color: #f2a400; }
+.homestuckSqr .navList a:nth-child(n+10):nth-child(-n+13) { color: #f2a400; }
+.homestuckSqr .navList a:nth-child(n+13) { color: #ffb529; }
+
+.homestuckSqr .candyCorn { 
+  content: url(assets://images/shades.gif);
+  margin: 0 9px; 
+}
+
+.homestuckSqr .pageFrame {
+  background: #c6c6c6;
+  width: 950px;
+  padding-top: 7px;
+  padding-bottom: 23px;
+  margin: 0 auto;
+  flex: 0 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.homestuckSqr .pageContent {
+  background: #efefef;
+  max-width: 950px;
+  width: 650px;
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  flex-flow: column;
+}
+
+.homestuckSqr .footer {
+  height: 110px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-right: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.homestuckSqr h2 {
+  line-height: 1.15;
+  text-align: center;
+  font-size: 32px;
+  padding: 15px 30px 0;
+  font-family: "courier-std", courier, monospace;
+}
+
+.homestuckSqr .story-text img {
+  border: 0;
+  max-width: 100%
+}
+
+.homestuckSqr .story-text img:first-of-type {
+  padding-top: 15px;
+}
+
+.homestuckSqr .arrow {
+  font-size: 24px;
+  line-height: 1.15;
+  padding: 0 30px 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+.homestuckSqr .bottomLinks {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  margin: 30px 30px 15px;
+}
+
+.homestuckSqr .bodyText {
+  padding: 25px 30px 0;
+}
+
+.homestuckSqr .bodyText > *:last-child {
+  padding-bottom: 30px;
+}
+
+.homestuckSqr .bodyText > .chat-container:last-child {
+  margin-bottom: 30px;
+  padding-bottom: 0;
+}
+
+
+/* EPILOGUES CSS  */
+
+.homestuckSqr .type-sm--md {
+  font-size: 16px;
+}
+
+.homestuckSqr .epilogue {
+  font-family: adobe-garamond-pro, serif;
+  font-weight: normal;
+}
+
+.homestuckSqr .chat-container {
+  border-style: dashed;
+  border-width: 1px;
+  border-color: gray;
+  font-size: 14px;
+}
+
+.homestuckSqr .story-text {
+  font-family: "courier-std", courier, monospace;
+  font-weight: bold; 
+  line-height: 1.35;
+  font-size: 14px;
+  padding: 0 0 15px;
+}
+
+.homestuckSqr .bottomLinks {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.homestuckSqr .meatcandy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 80px;
+  text-align: center;
+  font-size: 39px;
+  line-height: 26px;
+  font-family: FontStuck Extended, 'Homestuck-Regular', monospace;
+  font-weight: bold;
+}
+
+.homestuckSqr .titleimg {
+  height: 60px;
+  margin-bottom: -10px;
+  margin-right: 5px;
+}
+
+.homestuckSqr h1.type-hsep-ao3-header,
+.homestuckSqr h2.type-hsep-ao3-header,
+.homestuckSqr h3.type-hsep-ao3-header,
+.homestuckSqr h4.type-ao3-hsep-header {
+	font-family: adobe-garamond-pro, serif;
+	font-weight: bold;
+}
+
+.homestuckSqr .faq-command {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+  background-color: black;
+  color: white;
+}
+
+.homestuckSqr .faq-command-container {
+  background-color: #F2A400;
+}
+
+.homestuckSqr h1.type-hsep-header,
+.homestuckSqr h2.type-hsep-header,
+.homestuckSqr h3.type-hsep-header,
+.homestuckSqr h4.type-hsep-header {
+	font-family: FontStuck Extended, 'Homestuck-Regular', monospace;
+	font-weight: normal;
+}
+
+.homestuckSqr .hsep_bullet {
+	position: relative;
+	top: 10px;
+	left: -6px;
+	margin-right: 3px;
+	vertical-align: text-bottom;
+}
+
+.homestuckSqr .ao3-header {
+	position: relative;
+	height: 30px;
+	background: #900 url("/assets/epilogues/red-ao3-639c23787c95993ec52e91921778ba44c9086804be33229a40b5155e1dc91747.png");
+	padding: 0 0;
+	width: 100%;
+	box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.35), 1px 1px 3px -1px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.85);
+}
+
+.homestuckSqr .ao3-wrapper {
+	box-shadow: 1px 1px 5px #aaa;
+  margin: 30px 15px;
+  padding: 15px 0;
+}
+
+.homestuckSqr .ao3-label {
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+}
+
+.homestuckSqr .ao3-field {
+	font-family: Verdana, sans-serif;
+	font-weight: normal;
+}
+
+.homestuckSqr  p {
+	text-indent: 25px;
+}
+
+.homestuckSqr  p.no-indent {
+	text-indent: 0px;
+}
+
+.homestuckSqr  p.Command {
+	text-indent: 0px;
+	margin: 15px 0px 15px 25px;
+	font-family: Verdana, sans-serif;
+}
+
+.homestuckSqr span.opener {
+	float: left;
+	font-family: FontStuck Extended, 'Homestuck-Regular', monospace;
+	line-height: 0.825;
+  font-size: 51px;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.homestuckSqr div.chat {
+	margin: 15px 0px 15px 25px;
+	font-family: "courier-std", courier, monospace;
+}
+
+.homestuckSqr div.chat p {
+	text-indent: 0px;
+	font-weight: bold;
+}
+
+.homestuckSqr .pad-b-md {
+  padding-bottom: 15px;
+}
+
+.homestuckSqr .pad-y-md {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.homestuckSqr .aranea {
+	color: #005682;
+}
+
+.homestuckSqr .aradia {
+	color: #a10000;
+}
+
+.homestuckSqr .caliborn {
+	color: #2ed73a;
+}
+
+.homestuckSqr .calliope {
+	color: #a1a3a6;
+}
+
+.homestuckSqr .calliope-dead {
+	color: #ff0000;
+}
+
+.homestuckSqr .calliope-dead-story {
+	font-family: adobe-garamond-pro, serif;
+	font-weight: normal;
+	color: #000000;
+}
+
+.homestuckSqr .dave {
+	color: #e00707;
+}
+
+.homestuckSqr .davepetasprite {
+	color: #416600;
+}
+
+.homestuckSqr .davepetasprite-dialogue {
+	color: #f2a400;
+}
+
+.homestuckSqr .dirk {
+	color: #f2a400;
+}
+
+.homestuckSqr .eridan {
+	color: #7e0048;
+}
+
+.homestuckSqr .feferi {
+	color: #77003c;
+}
+
+.homestuckSqr .gamzee {
+	color: #2b0057;
+}
+
+.homestuckSqr .harry {
+	color: #0671cd;
+}
+
+.homestuckSqr .jade {
+	color: #4ac925;
+}
+
+.homestuckSqr .jade-brainwashed {
+	color: #000000;
+}
+
+.homestuckSqr .jake {
+	color: #1f9400;
+}
+
+.homestuckSqr .jane {
+	color: #0097d7;
+}
+
+.homestuckSqr .john {
+	color: #0715cd;
+}
+
+.homestuckSqr .kanaya {
+	color: #008141;
+}
+
+.homestuckSqr .karkat {
+	color: #7c7e81;
+}
+
+.homestuckSqr .obama {
+	color: #000000;
+}
+
+.homestuckSqr .rose {
+	color: #b536da;
+}
+
+.homestuckSqr .roxy {
+	color: #ff6ff2;
+}
+
+.homestuckSqr .sollux {
+	color: #a1a100;
+}
+
+.homestuckSqr .swifer {
+	color: #008141;
+}
+
+.homestuckSqr .tavros {
+	color: #a15000;
+}
+
+.homestuckSqr .tavros-kid {
+	color: #2b0057;
+}
+
+.homestuckSqr .terezi {
+	color: #008282;
+}
+
+.homestuckSqr .vriska {
+	color: #005682;
+}
+
+.homestuckSqr .meenah {
+	color: #77003c;
+}
+
+.homestuckSqr .nepeta {
+	color: #416600;
+}
+
+.homestuckSqr .obama {
+	color: #000000;
+}
+
+.homestuckSqr .jaspers {
+	color: #f141ef;
+}
+
+.homestuckSqr .rose {
+	color: #b536da;
+}
+
+.homestuckSqr .roxy {
+	color: #ff6ff2;
+}
+
+.homestuckSqr .ruthie {
+	color: #a10000;
+}
+
+.homestuckSqr .silas {
+	color: #71D666;
+}
+
+.homestuckSqr .sollux {
+	color: #a1a100;
+}
+
+.homestuckSqr .swifer {
+	color: #008141;
+}
+
+.homestuckSqr .cliper {
+	color: #008141;
+}
+
+.homestuckSqr .tavros {
+	color: #a15000;
+}
+
+.homestuckSqr .tavros-kid {
+	color: #2b0057;
+}
+
+.homestuckSqr .terezi {
+	color: #008282;
+}
+
+.homestuckSqr .vriska {
+	color: #005682;
+}
+
+.homestuckSqr .vrissy {
+	color: #005682;
+}
+
+.homestuckSqr .yiffy {
+	color: #D00009;
+}
+
+/* padding */
+
+.homestuckSqr .pad-t-0 {
+	padding-top: 0px;
+}
+
+.homestuckSqr .pad-b-0 {
+	padding-bottom: 0px;
+}
+
+.homestuckSqr .pad-l-0 {
+	padding-left: 0px;
+}
+
+.homestuckSqr .pad-r-0 {
+	padding-right: 0px;
+}
+
+.homestuckSqr .pad-0 {
+	padding: 0px;
+}
+
+.homestuckSqr .pad-x-0 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.homestuckSqr .pad-y-0 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.homestuckSqr .mar-t-0 {
+	margin-top: 0px;
+}
+
+.homestuckSqr .mar-b-0 {
+	margin-bottom: 0px;
+}
+
+.homestuckSqr .mar-l-0 {
+	margin-left: 0px;
+}
+
+.homestuckSqr .mar-r-0 {
+	margin-right: 0px;
+}
+
+.homestuckSqr .mar-0 {
+	margin: 0px;
+}
+
+.homestuckSqr .mar-x-0 {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.homestuckSqr .mar-y-0 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.homestuckSqr .pad-t-sm {
+	padding-top: 5px;
+}
+
+.homestuckSqr .pad-b-sm {
+	padding-bottom: 5px;
+}
+
+.homestuckSqr .pad-l-sm {
+	padding-left: 5px;
+}
+
+.homestuckSqr .pad-r-sm {
+	padding-right: 5px;
+}
+
+.homestuckSqr .pad-sm {
+	padding: 5px;
+}
+
+.homestuckSqr .pad-x-sm {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.homestuckSqr .pad-y-sm {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.homestuckSqr .mar-t-sm {
+	margin-top: 5px;
+}
+
+.homestuckSqr .mar-b-sm {
+	margin-bottom: 5px;
+}
+
+.homestuckSqr .mar-l-sm {
+	margin-left: 5px;
+}
+
+.homestuckSqr .mar-r-sm {
+	margin-right: 5px;
+}
+
+.homestuckSqr .mar-sm {
+	margin: 5px;
+}
+
+.homestuckSqr .mar-x-sm {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.homestuckSqr .mar-y-sm {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.homestuckSqr .pad-t-rg {
+	padding-top: 10px;
+}
+
+.homestuckSqr .pad-b-rg {
+	padding-bottom: 10px;
+}
+
+.homestuckSqr .pad-l-rg {
+	padding-left: 10px;
+}
+
+.homestuckSqr .pad-r-rg {
+	padding-right: 10px;
+}
+
+.homestuckSqr .pad-rg {
+	padding: 10px;
+}
+
+.homestuckSqr .pad-x-rg {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.homestuckSqr .pad-y-rg {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.homestuckSqr .mar-t-rg {
+	margin-top: 10px;
+}
+
+.homestuckSqr .mar-b-rg {
+	margin-bottom: 10px;
+}
+
+.homestuckSqr .mar-l-rg {
+	margin-left: 10px;
+}
+
+.homestuckSqr .mar-r-rg {
+	margin-right: 10px;
+}
+
+.homestuckSqr .mar-rg {
+	margin: 10px;
+}
+
+.homestuckSqr .mar-x-rg {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.homestuckSqr .mar-y-rg {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.homestuckSqr .pad-t-md {
+	padding-top: 15px;
+}
+
+.homestuckSqr .pad-b-md {
+	padding-bottom: 15px;
+}
+
+.homestuckSqr .pad-l-md {
+	padding-left: 15px;
+}
+
+.homestuckSqr .pad-r-md {
+	padding-right: 15px;
+}
+
+.homestuckSqr .pad-md {
+	padding: 15px;
+}
+
+.homestuckSqr .pad-x-md {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+.homestuckSqr .pad-y-md {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.homestuckSqr .mar-t-md {
+	margin-top: 15px;
+}
+
+.homestuckSqr .mar-b-md {
+	margin-bottom: 15px;
+}
+
+.homestuckSqr .mar-l-md {
+	margin-left: 15px;
+}
+
+.homestuckSqr .mar-r-md {
+	margin-right: 15px;
+}
+
+.homestuckSqr .mar-md {
+	margin: 15px;
+}
+
+.homestuckSqr .mar-x-md {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.homestuckSqr .mar-y-md {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.homestuckSqr .pad-t-hs-md {
+	padding-top: 25px;
+}
+
+.homestuckSqr .pad-b-hs-md {
+	padding-bottom: 25px;
+}
+
+.homestuckSqr .pad-l-hs-md {
+	padding-left: 25px;
+}
+
+.homestuckSqr .pad-r-hs-md {
+	padding-right: 25px;
+}
+
+.homestuckSqr .pad-hs-md {
+	padding: 25px;
+}
+
+.homestuckSqr .pad-x-hs-md {
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.homestuckSqr .pad-y-hs-md {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.homestuckSqr .mar-t-hs-md {
+	margin-top: 25px;
+}
+
+.homestuckSqr .mar-b-hs-md {
+	margin-bottom: 25px;
+}
+
+.homestuckSqr .mar-l-hs-md {
+	margin-left: 25px;
+}
+
+.homestuckSqr .mar-r-hs-md {
+	margin-right: 25px;
+}
+
+.homestuckSqr .mar-hs-md {
+	margin: 25px;
+}
+
+.homestuckSqr .mar-x-hs-md {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.homestuckSqr .mar-y-hs-md {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.homestuckSqr .pad-t-lg {
+	padding-top: 30px;
+}
+
+.homestuckSqr .pad-b-lg {
+	padding-bottom: 30px;
+}
+
+.homestuckSqr .pad-l-lg {
+	padding-left: 30px;
+}
+
+.homestuckSqr .pad-r-lg {
+	padding-right: 30px;
+}
+
+.homestuckSqr .pad-lg {
+	padding: 30px;
+}
+
+.homestuckSqr .pad-x-lg {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.homestuckSqr .pad-y-lg {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.homestuckSqr .mar-t-lg {
+	margin-top: 30px;
+}
+
+.homestuckSqr .mar-b-lg {
+	margin-bottom: 30px;
+}
+
+.homestuckSqr .mar-l-lg {
+	margin-left: 30px;
+}
+
+.homestuckSqr .mar-r-lg {
+	margin-right: 30px;
+}
+
+.homestuckSqr .mar-lg {
+	margin: 30px;
+}
+
+.homestuckSqr .mar-x-lg {
+	margin-right: 30px;
+	margin-left: 30px;
+}
+
+.homestuckSqr .mar-y-lg {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.homestuckSqr .pad-t-hs-lg {
+	padding-top: 32.5px;
+}
+
+.homestuckSqr .pad-b-hs-lg {
+	padding-bottom: 32.5px;
+}
+
+.homestuckSqr .pad-l-hs-lg {
+	padding-left: 32.5px;
+}
+
+.homestuckSqr .pad-r-hs-lg {
+	padding-right: 32.5px;
+}
+
+.homestuckSqr .pad-hs-lg {
+	padding: 32.5px;
+}
+
+.homestuckSqr .pad-x-hs-lg {
+	padding-right: 32.5px;
+	padding-left: 32.5px;
+}
+
+.homestuckSqr .pad-y-hs-lg {
+	padding-top: 32.5px;
+	padding-bottom: 32.5px;
+}
+
+.homestuckSqr .mar-t-hs-lg {
+	margin-top: 32.5px;
+}
+
+.homestuckSqr .mar-b-hs-lg {
+	margin-bottom: 32.5px;
+}
+
+.homestuckSqr .mar-l-hs-lg {
+	margin-left: 32.5px;
+}
+
+.homestuckSqr .mar-r-hs-lg {
+	margin-right: 32.5px;
+}
+
+.homestuckSqr .mar-hs-lg {
+	margin: 32.5px;
+}
+
+.homestuckSqr .mar-x-hs-lg {
+	margin-right: 32.5px;
+	margin-left: 32.5px;
+}
+
+.homestuckSqr .mar-y-hs-lg {
+	margin-top: 32.5px;
+	margin-bottom: 32.5px;
+}
+
+.homestuckSqr .pad-t-xl {
+	padding-top: 60px;
+}
+
+.homestuckSqr .pad-b-xl {
+	padding-bottom: 60px;
+}
+
+.homestuckSqr .pad-l-xl {
+	padding-left: 60px;
+}
+
+.homestuckSqr .pad-r-xl {
+	padding-right: 60px;
+}
+
+.homestuckSqr .pad-xl {
+	padding: 60px;
+}
+
+.homestuckSqr .pad-x-xl {
+	padding-right: 60px;
+	padding-left: 60px;
+}
+
+.homestuckSqr .pad-y-xl {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.homestuckSqr .mar-t-xl {
+	margin-top: 60px;
+}
+
+.homestuckSqr .mar-b-xl {
+	margin-bottom: 60px;
+}
+
+.homestuckSqr .mar-l-xl {
+	margin-left: 60px;
+}
+
+.homestuckSqr .mar-r-xl {
+	margin-right: 60px;
+}
+
+.homestuckSqr .mar-xl {
+	margin: 60px;
+}
+
+.homestuckSqr .mar-x-xl {
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.homestuckSqr .mar-y-xl {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.homestuckSqr .pad-t-xxl {
+	padding-top: 90px;
+}
+
+.homestuckSqr .pad-b-xxl {
+	padding-bottom: 90px;
+}
+
+.homestuckSqr .pad-l-xxl {
+	padding-left: 90px;
+}
+
+.homestuckSqr .pad-r-xxl {
+	padding-right: 90px;
+}
+
+.homestuckSqr .pad-xxl {
+	padding: 90px;
+}
+
+.homestuckSqr .pad-x-xxl {
+	padding-right: 90px;
+	padding-left: 90px;
+}
+
+.homestuckSqr .pad-y-xxl {
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+.homestuckSqr .mar-t-xxl {
+	margin-top: 90px;
+}
+
+.homestuckSqr .mar-b-xxl {
+	margin-bottom: 90px;
+}
+
+.homestuckSqr .mar-l-xxl {
+	margin-left: 90px;
+}
+
+.homestuckSqr .mar-r-xxl {
+	margin-right: 90px;
+}
+
+.homestuckSqr .mar-xxl {
+	margin: 90px;
+}
+
+.homestuckSqr .mar-x-xxl {
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+.homestuckSqr .mar-y-xxl {
+	margin-top: 90px;
+	margin-bottom: 90px;
+}
+
+.homestuckSqr .pad-t-xxxl {
+	padding-top: 120px;
+}
+
+.homestuckSqr .pad-b-xxxl {
+	padding-bottom: 120px;
+}
+
+.homestuckSqr .pad-l-xxxl {
+	padding-left: 120px;
+}
+
+.homestuckSqr .pad-r-xxxl {
+	padding-right: 120px;
+}
+
+.homestuckSqr .pad-xxxl {
+	padding: 120px;
+}
+
+.homestuckSqr .pad-x-xxxl {
+	padding-right: 120px;
+	padding-left: 120px;
+}
+
+.homestuckSqr .pad-y-xxxl {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.homestuckSqr .mar-t-xxxl {
+	margin-top: 120px;
+}
+
+.homestuckSqr .mar-b-xxxl {
+	margin-bottom: 120px;
+}
+
+.homestuckSqr .mar-l-xxxl {
+	margin-left: 120px;
+}
+
+.homestuckSqr .mar-r-xxxl {
+	margin-right: 120px;
+}
+
+.homestuckSqr .mar-xxxl {
+	margin: 120px;
+}
+
+.homestuckSqr .mar-x-xxxl {
+	margin-right: 120px;
+	margin-left: 120px;
+}
+
+.homestuckSqr .mar-y-xxxl {
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.homestuckSqr .mar-x-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.homestuckSqr .mar-y-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.homestuckSqr .type-xxl {
+	font-size: 74px;
+}
+
+.homestuckSqr .type-hs-opener-rg {
+	font-size: 65px;
+}
+
+.homestuckSqr .type-xl {
+	font-size: 56px;
+}
+
+.homestuckSqr .type-hs-opener-sm {
+	font-size: 51px;
+}
+
+.homestuckSqr .type-lg {
+	font-size: 39px;
+}
+
+.homestuckSqr .type-md {
+	font-size: 28px;
+}
+
+.homestuckSqr .type-hs-header {
+	font-size: 32px;
+}
+
+.homestuckSqr .type-hs-copy {
+	font-size: 24px;
+}
+
+.homestuckSqr .type-rg {
+	font-size: 20px;
+}
+
+.homestuckSqr .type-hs-rg {
+	font-size: 18px;
+}
+
+.homestuckSqr .type-sm {
+	font-size: 16px;
+}
+
+.homestuckSqr .type-hs-small {
+	font-size: 14px;
+}
+
+.homestuckSqr .type-bs {
+	font-size: 12px;
+}
+
+.homestuckSqr .type-hs-button {
+	font-size: 11px;
+}
+
+.homestuckSqr .type-hs-bottom {
+	font-size: 10px;
+}
+
+.homestuckSqr .type-center {
+	text-align: center;
+}
+
+.homestuckSqr .type-left {
+	text-align: left;
+}
+
+.homestuckSqr .type-right {
+	text-align: right;
+}
+
+.homestuckSqr .type-xxl--md {
+	font-size: 74px;
+}
+
+.homestuckSqr .type-hs-opener-rg--md {
+	font-size: 65px;
+}
+
+.homestuckSqr .type-xl--md {
+	font-size: 56px;
+}
+
+.homestuckSqr .type-hs-opener-sm--md {
+	font-size: 51px;
+}
+
+.homestuckSqr .type-lg--md {
+	font-size: 39px;
+}
+
+.homestuckSqr .type-md--md {
+	font-size: 28px;
+}
+
+.homestuckSqr .type-hs-header--md {
+	font-size: 32px;
+}
+
+.homestuckSqr .type-hs-copy--md {
+	font-size: 24px;
+}
+
+.homestuckSqr .type-rg--md {
+	font-size: 20px;
+}
+
+.homestuckSqr .type-hs-rg--md {
+	font-size: 18px;
+}
+
+.homestuckSqr .type-sm--md {
+	font-size: 16px;
+}
+
+.homestuckSqr .type-hs-small--md {
+	font-size: 14px;
+}
+
+.homestuckSqr .type-bs--md {
+	font-size: 12px;
+}
+
+.homestuckSqr .type-hs-button--md {
+	font-size: 11px;
+}
+
+.homestuckSqr .type-hs-bottom--md {
+	font-size: 10px;
+}
+
+.homestuckSqr .type-center--md {
+	text-align: center;
+}
+
+.homestuckSqr .type-left--md {
+	text-align: left;
+}
+
+.homestuckSqr .type-right--md {
+	text-align: right;
+}
