@@ -23,11 +23,22 @@
   margin: 0 .3em; 
 }
 
-.homestuckSqr .navList a:nth-child(n+0):nth-child(-n+1) { color: #f2a400 }
-.homestuckSqr .navList a:nth-child(n+2):nth-child(-n+4) { color: #f2a400; }
-.homestuckSqr .navList a:nth-child(n+5):nth-child(-n+9) { color: #f2a400; }
-.homestuckSqr .navList a:nth-child(n+10):nth-child(-n+13) { color: #f2a400; }
-.homestuckSqr .navList a:nth-child(n+13) { color: #ffb529; }
+.homestuckSqr .bannerImage {
+	background-image: url(assets://images/footer-heart-logo.png);
+	width: 180px;
+	height: 102px;
+	background-repeat: no-repeat;
+}
+
+.homestuckSqr .bannerImage.left {
+	background-position: left;
+}
+
+.homestuckSqr .bannerImage.right {
+	background-position: right;
+}
+
+.homestuckSqr .navList a { color: #f2a400 }
 
 .homestuckSqr .candyCorn { 
   content: url(assets://images/shades.gif);
@@ -95,7 +106,7 @@
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 10px;
-  margin: 30px 30px 15px;
+  margin: 30px 30px 0;
 }
 
 .homestuckSqr .bodyText {
@@ -120,6 +131,49 @@
   margin-left: -30px !important;
   margin-right: -30px !important;
   margin-top: 15px !important;
+}
+
+.homestuckSqr .credits {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: white;
+  width: 650px;
+	box-sizing: border-box;
+	margin-bottom: -15px;
+}
+
+.homestuckSqr .about {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  background-color: white;
+  width: 650px;
+	padding: 0 30px;
+	font-weight: 400;
+	box-sizing: border-box;
+	margin-bottom: -15px;
+}
+
+.homestuckSqr .recap h2 { 
+	text-align: left;
+	padding: 15px 0;
+}
+
+.homestuckSqr .recap * {
+	text-indent: 0;
+}
+
+.homestuckSqr .log .flex {
+	display: flex;
+	align-items: center;
+}
+
+.homestuckSqr .bonus img {
+	width: 164px;
+	max-width: unset;
+}
+
+.homestuckSqr .bonus .flex-width-2 {
+	flex-grow: 2;
 }
 
 /* EPILOGUES CSS  */
@@ -261,7 +315,7 @@
 }
 
 .homestuckSqr div.chat {
-	margin: 15px 0px 15px 25px;
+	margin: 15px 25px 15px 25px;
 	font-family: "courier-std", courier, monospace;
 }
 
@@ -468,6 +522,15 @@
 .homestuckSqr .yiffy {
 	color: #D00009;
 }
+
+.homestuckSqr .avril {
+  color: #FFC600
+}
+
+.homestuckSqr .imode {
+  color: #BDB49C
+}
+
 
 /* padding */
 
