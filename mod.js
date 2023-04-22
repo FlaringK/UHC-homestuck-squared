@@ -172,7 +172,7 @@ module.exports = {
         // Add page
         customPages[`HOMESTUCK2-${name.toUpperCase()}-${i}`] = {
           component: {
-            title: () => "Homestuck^2: " + name, 
+            title: () => "Homestuck^2: " + name.charAt(0).toUpperCase() + name.slice(1), 
             next: () => `/homestuck2-${name.toUpperCase()}-${i + 1}`, 
             template: hsPage(html, page.theme) // 
           },
