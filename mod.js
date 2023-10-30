@@ -10,7 +10,7 @@ let api
 let customPages = []
 
 module.exports = {
-  title: "Homestuck^2 (testversion)",
+  title: "Homestuck^2",
   summary: "Homestuck^2. An official continuation of Homestuck.",
   author: "FlaringK (<a href='https://flaringk.github.io/'>Here's my uber cool site</a>)",
   version: 1.0,
