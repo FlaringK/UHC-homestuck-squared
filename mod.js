@@ -3,7 +3,7 @@ const toPageString = pageNumber => pageNumber < 10000 ? `00${pageNumber}` : `0${
 const hsPage = (pageText, theme) => `
 <div class="homestuckSqr ${theme ? theme : ""}"> <div class="pageBody customStyles theme-Denizenthemes-0"> <nav class="navBanner customNavBanner pixelated"> <div class="navList"> <a href="/homestuck2">HOME</a><div class="sep">|</div><a href="/homestuck2-bonus">BONUS</a><div class="sep">|</div><a href="/homestuck2-log">LOG</a><div class="candyCorn"></div><a href="/homestuck2-about">ABOUT</a><div class="sep">|</div><a href="/homestuck2-recap">RECAP</a><div class="candyCorn"></div><a href="/homestuck2-credits">CREDITS</a><div class="sep">|</div><a href="/">BACK TO UHC</a> </div></nav> <div class="pageFrame"> <div class="pageContent"> <div class="story-text"> ${pageText}</div> </div></div><div class="footer " style="width: 950px;"><div class="bannerImage left"></div><div class="bannerImage right"></div></div></div></div>
 `
-const arrow = link => `<div class="arrow"> <div> <span>&gt;</span> <a href="${link}">==&gt; </a><br></div></div>`
+const arrow = (link, title) => `<div class="arrow"> <div> <span>&gt;</span> <a href="${link}">${title} </a><br></div></div>` //==&gt;
 const bottomLinks = link => `<div class="bottomLinks"> <a href="/homestuck2">Start Over</a> | <a href="${link}">Go Back</a> </div>`
 
 let api
@@ -32,12 +32,14 @@ module.exports = {
 
     // First page / Home
     let firstpage = `<h2>Somewhere, in the distant reaches of space...</h2><img src="assets://images/homestuckSqrPanels/0001.gif">`
-    firstpage += `<div class="bodyText"></div>` + arrow(`homestuck2-2`) + `<div class="bottomLinks"> <a href="/homestuck2">Start Over</a></div>`
+    firstpage += `<div class="bodyText"></div>` + arrow(`homestuck2-2`, `${hs2Data.pages[2].command}`) + `<div class="bottomLinks"> <a href="/homestuck2">Start Over</a></div>`
 
     firstpage = `
     <div class="homestuckSqr"> <div class="pageBody customStyles theme-Denizenthemes-0"> <nav class="navBanner customNavBanner pixelated"> <img src="assets://images/HS2_logo.png" style="max-width: 950px; margin: auto; display: block;"> <h3 style="color: #FFFFFF;line-height: 1.15;text-align: center;font-size: 18px;padding-top: 15px;padding-bottom: 15px;">An official continuation of <i>Homestuck.</i></h3> <div class="navList"> <a href="/homestuck2">HOME</a><div class="sep">|</div><a href="/homestuck2-bonus">BONUS</a><div class="sep">|</div><a href="/homestuck2-log">LOG</a><div class="candyCorn"></div><a href="/homestuck2-about">ABOUT</a><div class="sep">|</div><a href="/homestuck2-recap">RECAP</a><div class="candyCorn"></div><a href="/homestuck2-credits">CREDITS</a><div class="sep">|</div><a href="/">BACK TO UHC</a> </div></nav> <div class="mar-y-rg" style="height:3px;width:100%;background-color:#f2a400;"></div> <div class="pageFrame"> <div class="pageContent"> <div class="story-text"> ${firstpage}</div> </div></div><div class="footer " style="width: 950px;"><div class="bannerImage left"></div><div class="bannerImage right"></div></div></div></div>
     `
-
+ 
+	let logPapa = [`<p>10/25/2019 - <a href=\"/homestuck2\">\"Somewhere, in the distant reaches of space...\"</a></p>`];
+    
     // Add first page
     customPages[`HOMESTUCK2`] = {
       component: {
@@ -51,6 +53,7 @@ module.exports = {
     // Create pages
     for (let i = 2; i < hs2Data.pages.length + 1; i++) {
       const data = hs2Data.pages[i - 1];
+	  const dataCommand = hs2Data.pages[i]
 
       // Command
       let html = `<h2>${data.command}</h2>`
@@ -67,7 +70,7 @@ module.exports = {
       html += `<div class="bodyText">${data.body}</div>`
 
       // Next arrow link
-      if (i != hs2Data.pages.length) { html += arrow(`homestuck2-${i + 1}`) }
+      if (i != hs2Data.pages.length) { html += arrow(`homestuck2-${i + 1}`, `${dataCommand.command}`) } 
 
       // Bottom links
       if (i != 2) { html += bottomLinks(`homestuck2-${i - 1}`) }
@@ -83,14 +86,19 @@ module.exports = {
         scss: ""
       }
       
+	  
+	  
+		  logPapa.unshift(`<p>${data.date} - <a href=\"/homestuck2-${i}\">\"${data.command}\"</a></p>`)
+	  
     }
 
+	let logPageData = `<div class=\"log o_story-nav pad-y-lg mar-x-rg mar-x-lg--md weight-bold\" style=\"font-size:11px\">` + logPapa.join("") + `</div>`
     // Add log page
     customPages[`HOMESTUCK2-LOG`] = {
       component: {
         title: () => "Homestuck^2: Log", 
         next: () => `/homestuck2-log`, 
-        template: hsPage("<h2>ADVENTURE LOG</h2>" + hs2Data.log) // 
+        template: hsPage("<h2>ADVENTURE LOG</h2>" + logPageData) // 
       },
       scss: ""
     }
